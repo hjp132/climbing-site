@@ -1,0 +1,29 @@
+@import '../public/style.css';
+
+
+.section{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: lightblue;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionDiv{
+    width: 75%;
+    height: 75%;
+    background-color: white;
+
+}
+
+.sectionImage{
+
+}
+
+.sectionText{
+
+}
