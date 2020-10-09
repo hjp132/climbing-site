@@ -124,6 +124,7 @@
 }
 
 .card{
+    text-decoration: none;
     background: #085da5;
     height: 250px;
     width: 250px;
