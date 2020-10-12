@@ -161,7 +161,7 @@ body{
 }
 
 .largeCard{
-    flex-grow: 1;
+    width: 100%;
 }
 
 .btnGroup{
@@ -183,12 +183,14 @@ body{
 }
 
 .news{
-    background: purple;
+    padding: 0;
 }
 
 .articleContainer{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
 }
 .articleItem{
     background: #162930;
@@ -199,6 +201,7 @@ body{
     padding: 30px;
     max-width: 221px;
     text-align: center;
+    border-radius: 16px;
 }
 
 .articleImg{
@@ -208,3 +211,45 @@ body{
     margin: 10px 0px;
 }
 
+.history{
+    background-image: linear-gradient(0deg, rgb(62 90 130 / 75%), rgb(93 117 122)), url(./images/history.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 38%;
+    background-size: cover;
+    background-position: 0px;
+}
+
+.historyTextContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.historyTextContainer p {
+    display: flex;
+    width: 50%;
+    color: white;
+}
+
+.historyText1{
+    margin: 0 20px 0 0;
+    border-right: 1px solid;
+}
+
+.historyText2{
+    margin: 0 0 0 20px;
+}
+
+
+.footerContainer{
+    background: linear-gradient(0deg, rgb(0 0 0), rgb(0 0 0), rgb(0 0 0),rgb(0 0 0 / 0%));
+    padding-top: 100px;
+}
+.footer{ 
+    margin: 0 80px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
