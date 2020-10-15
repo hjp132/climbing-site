@@ -105,8 +105,8 @@ body{
 }
 
 .header li {
-   
-    display: inline-block
+    display: inline-block;
+    height: auto;
 }
 .header li a {
     display: block;
