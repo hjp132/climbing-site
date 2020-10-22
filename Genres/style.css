@@ -2,12 +2,13 @@
 
 body{
     background: black;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 
 .genreContainer{
-    display: block;
-    justify-content: space-evenly;
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     grid-row-gap: 30px;
     width: 100%;
@@ -15,18 +16,90 @@ body{
     background: white;
 }
 
-.genreContainer{
 
-}
 
 .genreContainer p{
     color: black;
     font-size: 32px;
     padding: 10px;
+    width: 50%;
+    padding: 50px;
 }
 
-.genreItem{
-    display: block;
-    max-width: 100%;
-    height: auto;
+.genreTitle{
+    margin: 50px;
 }
+
+.genreTitle h4{
+    font-size: 73px;
+    position: absolute;
+    top: 8px;
+}
+.view {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .container {
+    height: 100vh;
+    width: 400vw;
+    position: absolute;
+    left: 0;
+    transition: left 1s ease-in-out;
+  }
+  .container.view-1 {
+    left: 0vw;
+  }
+  .container.view-2 {
+    left: -100vw;
+  }
+  .container.view-3 {
+    left: -200vw;
+  }
+  .container.view-4 {
+    left: -300vw;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .panel {
+    width: 100vw;
+    height: 100vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+  }
+  .panel.panel-1 {
+    background-color: #aaf;
+  }
+  .panel.panel-2 {
+    background-color: #faa;
+  }
+  .panel.panel-3 {
+    background-color: #afa;
+  }
+  .panel.panel-4 {
+    background-color: #dcd;
+  }
+  
+  .controls {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 25px;
+    z-index: 1000;
+  }
+  .controls ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .controls ul li {
+    display: inline-block;
+    cursor: pointer;
+  }
