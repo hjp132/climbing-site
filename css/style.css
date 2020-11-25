@@ -246,7 +246,7 @@ display: block;
 }
 
 .hidden{
-    display: none;
+    display: none !important;
 }
 
 .show{
@@ -296,7 +296,7 @@ display: block;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     overflow: hidden;
-    height: 500px;
+    /* height: 500px; */
     display: flex;
     margin: 10px 0;
 }
@@ -337,4 +337,33 @@ display: block;
 
 .imagesTable td{
     background-color: #3578b2;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.formContainer label,input { 
+    margin-right: 50%
+}
+
+.name, .email{
+    width: 15%;
+    min-width: 250px;
+}
+
+.message{
+    width: 50%;
+}
+
+.submitBtn{
+    color: white;
+    margin: 5px 0;
+}
+
+.invis{
+    display: hidden;
 }
