@@ -1,3 +1,5 @@
+
+/* this is the body css */
 body{
     background:#5498d3;
     position: relative;
@@ -12,13 +14,13 @@ body{
 }
 
 
-
+/* general font styling for a tags */
 a{
     text-decoration: none;
     color: #fff;
 }
 
-
+/* media querys to help with responsiveness */
 @media screen and (min-width: 1000px) {
     .container{
         max-width: 936px;
@@ -30,7 +32,7 @@ a{
         flex-direction: column;
     }
 }
-
+/* header css */
 header.header{
     justify-content: space-between;
     padding: 1rem 2rem;
@@ -84,7 +86,7 @@ header.header .header-navigation a{
     font-family:'Sen', sans-serif;
 }
 
-
+/* also still header css */
 .dropdown{
     float: left;
   overflow: hidden;
@@ -129,6 +131,8 @@ header.header .header-navigation a{
     display: block;
   }
 
+  /* general container ( gets used everywhere throughout the site) */
+
 .container{
     flex-grow: 1;
     margin: 0 auto;
@@ -136,6 +140,7 @@ header.header .header-navigation a{
     width: auto;
 }
 
+/* hero, title and subtitle are used in every page */
 .hero{
     align-items: stretch;
     display: flex;
@@ -157,6 +162,8 @@ header.header .header-navigation a{
 .subtitle{
     font-family: 'Sen',sans-serif;
 }
+
+/* this is for the blog stuff */
 .blog-entry{
     max-width: 600px;
     margin: 3rem auto;
@@ -231,6 +238,8 @@ header.header .header-navigation a{
     display: flex;
     justify-content: space-evenly;
 }
+
+/* this is for the cards that home, genres and news use */
 .card {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
@@ -403,7 +412,7 @@ display: block;
 }
 
 .submitBtn{
-    color: white;
+    color: black;
     margin: 5px 0;
 }
 
@@ -414,4 +423,3 @@ display: block;
 .results-container{
     margin-top: 30px;
 }
-

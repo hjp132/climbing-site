@@ -121,18 +121,22 @@
         </table>
     </div>
 
+
+    <!-- this is my contact area, here the user can contact us by inputting all of the relevant information -->
     <div class='container'>
         <div class='title'>Contact:</div>
         <div class='formContainer'>
-            <form>
+            <form onsubmit='return false'>
                 <label>First Name:</label>
-                <input class='name' type='text'>
+                <input class='name' type='text' required>
                 <label>Email:</label>
-                <input class='email' type='text'>
+                <input class='email' type='text' required>
                 <label>Message:</label>
-                <input class='message' type='text'>
+                <input class='message' type='text' required>
+                <!-- on submit it will then start this function in credit.js -->
+                <button class='submitBtn' onClick='formSubmission()'>Submit</button>
             </form>
-            <btn class='submitBtn' onClick='formSubmission()'>Submit</btn>
+
 
         </div>
         <h4 class='formConfirm hidden'>Your message has been submitted!</h4>
