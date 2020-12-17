@@ -267,17 +267,16 @@ display: block;
 }
 
 .newsArticle{
-    background: white;
     width: 50%;
     margin: 30px auto;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
     padding: 10px;
-
-
+    color: white;
 }
 
 .newsArticle li{
-    color: black;
+    color: white;
 }
 
 .readArticle{
@@ -286,7 +285,7 @@ display: block;
 }
 
 .newsArticle h2,p{
-    color: black;
+    color: white;
 }
 
 .hidden{
@@ -411,3 +410,8 @@ display: block;
 .invis{
     display: hidden;
 }
+
+.results-container{
+    margin-top: 30px;
+}
+

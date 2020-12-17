@@ -10,4 +10,7 @@ function formSubmission() {
         form.classList.add('hidden')
         confirm.classList.remove('hidden')
     }
+    else {
+        alert('You havent filled in the form')
+    }
 }
